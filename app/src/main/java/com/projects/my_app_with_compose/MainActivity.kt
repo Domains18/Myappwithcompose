@@ -63,9 +63,10 @@ class MainActivity : ComponentActivity() {
 						modifier = Modifier
 							.fillMaxWidth()
 					) {
-						OutlinedTextField(value = name, onValueChange = { text ->
-							name = text
-						},
+						OutlinedTextField(
+							value = name, onValueChange = { text ->
+								name = text
+							},
 							modifier = Modifier.weight(1f)
 						)
 						Spacer(modifier = Modifier.width(16.dp))
